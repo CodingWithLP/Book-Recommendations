@@ -1,0 +1,39 @@
+<html >
+
+<head>
+    <h1></h1>
+</head>
+<body>
+ <div class="login">
+	<h1>Research the books and answer the questions!</h1>
+    <h2>Type 1 for books in your reading level and type 0 if they aren't</h2>
+
+    <form action="{{ url_for('Recommend')}}"method="post">
+    	<input type="text" name="A1" placeholder='Hop on Pop by Dr. Seuss' required="required" />
+        <input type="text" name="A1" placeholder="To Kill a Mockingbird by Harper Lee" required="required" />
+		<input type="text" name="A1" placeholder='Old Black Fly by Jim Aylesworth' required="required" />
+		<input type="text" name="A1" placeholder='"Fever, 1793" by Laurie Halse Anderson' required="required" />
+        <input type="text" name="A1" placeholder='The Giver by Lois Lowry' required="required" />
+        <input type="text" name="A1" placeholder='Jumanji by Chris Van Allsburg' required="required" />
+        <input type="text" name="A1" placeholder='Green Eggs and Ham by Dr. Seuss' required="required" />
+        <input type="text" name="A1" placeholder='The Magic School Bus: Inside the Earth by Joanna Cole and Bruce Degen' required="required" />
+        <input type="text" name="A1" placeholder='The Mitten by Alvin Tresselt' required="required" />
+        <input type="text" name="A1" placeholder='Flat Stanley: His Original Adventure by Jeff Brown' required="required" />
+        <input type="text" name="A1" placeholder='Charlottes Web by E.B. White' required="required" />
+        <input type="text" name="A1" placeholder='Lord of the Flies by William Golding' required="required" />
+        <input type="text" name="A1" placeholder='Hamlet by William Shakespeare' required="required" />
+        <input type="text" name="A1" placeholder='Charlie and the Chocolate Factory by Roald Dahl' required="required" />
+        <input type="text" name="A1" placeholder='Number the Stars by Lois Lowry' required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Submit</button>
+    </form>
+
+   <br>
+   <br>
+   {{ recommendation }}
+
+ </div>
+
+
+</body>
+</html>
